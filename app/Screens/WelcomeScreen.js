@@ -17,14 +17,14 @@ function WelcomeScreen() {
   var bgImage = require("../assets/erpBG.png");
   const [isLoggedin, setIsLoggedin] = useState(false);
   return isLoggedin ? (
-    <>
+    <View style={styles.DashBoard}>
       <DashBoard />
       <AppButton
         title={"Logout"}
         color={Colors.secondary}
         onPress={() => setIsLoggedin(false)}
       />
-    </>
+    </View>
   ) : (
     <SafeAreaView style={styles.safeArea}>
       <ImageBackground
@@ -78,6 +78,11 @@ const styles = StyleSheet.create({
     padding: 20,
     width: "100%",
     alignItems: "center",
+  },
+  DashBoard: {
+    flex: 1,
+    justifyContent: "space-between",
+    alignItems: "flex-start",
   },
 });
 
