@@ -1,20 +1,16 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { useEffect, useState } from "react";
+import WelcomeFocus from "./app/Screens/WelcomeFocus";
+import WelcomeScreen from "./app/Screens/WelcomeScreen";
+import DashBoard from "./app/Screens/DashBoard";
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+  const [isFocused, setIsFocused] = useState(true);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsFocused(false);
+    }, 3000);
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+    return () => clearTimeout(timer);
+  }, []);
+  return isFocused ? <WelcomeFocus /> : <WelcomeScreen />;
+}
