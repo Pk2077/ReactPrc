@@ -1,6 +1,6 @@
 import React from "react";
-import { Image, StyleSheet, Text, View } from "react-native";
-import { Colors } from "../colors";
+import { Image, Text, View } from "react-native";
+import styles from "./styles";
 
 function Card({ image, title, subTitle }) {
   return (
@@ -13,32 +13,5 @@ function Card({ image, title, subTitle }) {
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  card: {
-    borderRadius: 15,
-    backgroundColor: Colors.white,
-    marginBottom: 20,
-    overflow: "hidden",
-  },
-  image: {
-    width: "100%",
-    height: 100,
-    marginBottom: 10,
-  },
-
-  details: {
-    padding: 20,
-  },
-  title: {
-    marginBottom: 7,
-    fontSize: 30,
-  },
-  subTitle: {
-    color: Colors.primary,
-    fontSize: 20,
-    fontWeight: "bold",
-  },
-});
 
 export default Card;

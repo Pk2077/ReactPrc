@@ -1,7 +1,8 @@
 import React from "react";
 import { StyleSheet, View } from "react-native";
-import Card from "../Components/card";
-import Menu from "../Components/menu";
+import Card from "../../Components/card";
+import Menu from "../../Components/menu";
+import styles from "../Styles";
 
 function DashBoard() {
   return (
@@ -12,11 +13,5 @@ function DashBoard() {
     </View>
   );
 }
-const styles = StyleSheet.create({
-  card: {
-    backgroundColor: "#f8f4f4",
-    padding: 20,
-    paddingTop: 80,
-  },
-});
+
 export default DashBoard;

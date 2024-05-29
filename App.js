@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
-import WelcomeFocus from "./app/Screens/WelcomeFocus";
-import WelcomeScreen from "./app/Screens/WelcomeScreen";
-import DashBoard from "./app/Screens/DashBoard";
+import WelcomeScreen from "./app/Screens/WelcomeScreen/WelcomeScreen";
+import WelcomeFocus from "./app/Screens/WelcomeFocus/WelcomeFocus";
 
 export default function App() {
   const [isFocused, setIsFocused] = useState(true);
