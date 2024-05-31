@@ -1,12 +1,16 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { View } from "react-native";
+import Menu from "../../Components/menu";
+import styles from "../Styles";
 
-function home(props) {
+function Home() {
   return (
     <View>
-      <Text>I'm Home</Text>
+      <View style={styles.card}>
+        <Menu />
+      </View>
     </View>
   );
 }
 
-export default home;
+export default Home;

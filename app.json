@@ -4,7 +4,7 @@
     "slug": "Focus1",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./app/assets/login-logo.png",
+    "icon": "./app/assets/logon.jpg",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./app/assets/splash.png",
@@ -16,12 +16,17 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./app/assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+        "foregroundImage": "./app/assets/logon.jpg"
+      },
+      "package": "com.pk2077.Focus1"
     },
     "web": {
-      "favicon": "./app/assets/login-logo.png"
+      "favicon": "./app/assets/logon.jpg"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "0d9bad00-bafc-44d6-8c7a-32d202cf57fa"
+      }
     }
   }
 }

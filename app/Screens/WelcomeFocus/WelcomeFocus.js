@@ -8,7 +8,11 @@ function WelcomeFocus() {
     <View style={styles.container}>
       <View style={styles.centerContent}>
         <Text style={styles.mainText}>
-          Focus ERP <Image source={require("../../assets/login-logo.png")} />
+          Focus ERP{" "}
+          <Image
+            source={require("../../assets/logon.jpg")}
+            style={{ height: 30, width: 30 }}
+          />
         </Text>
       </View>
       <View style={styles.bottomContent}>

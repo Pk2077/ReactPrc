@@ -1,5 +1,6 @@
 import { StyleSheet } from "react-native";
 import { Colors } from "../colors";
+import Constants from "expo-constants";
 
 const styles = StyleSheet.create({
   button: {
@@ -30,6 +31,8 @@ const styles = StyleSheet.create({
 
   details: {
     padding: 20,
+    justifyContent: "center",
+    alignItems: "center",
   },
   title: {
     marginBottom: 7,
@@ -45,7 +48,7 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.white,
     marginBottom: 20,
     overflow: "hidden",
-    elevation: 20,
+    elevation: 2,
     width: 400,
   },
   details2: {
@@ -68,7 +71,10 @@ const styles = StyleSheet.create({
     borderRadius: 35,
     marginRight: 10,
   },
-  detailsContainer: {},
+  detailsContainer: {
+    marginLeft: 10,
+    justifyContent: "center",
+  },
   title2: {
     fontSize: 25,
     fontWeight: "bold",
@@ -76,21 +82,7 @@ const styles = StyleSheet.create({
   subTitle2: {
     fontSize: 18,
     fontStyle: "italic",
-  },
-  text2: {
-    fontSize: 18,
-    fontWeight: "bold",
-    alignSelf: "center",
-    paddingBottom: 30,
-  },
-  bar2: {
-    flex: 0.1,
-    flexDirection: "row",
-    justifyContent: "space-between",
-    width: "100%",
-  },
-  Profile2: {
-    flexDirection: "row",
+    color: "#000",
   },
   bottomMenu: {
     flexDirection: "row",
@@ -109,6 +101,29 @@ const styles = StyleSheet.create({
   bottomMenuItemText: {
     marginTop: 4,
     fontSize: 12,
+  },
+  text2: {
+    fontSize: 18,
+    fontWeight: "bold",
+    alignSelf: "center",
+    alignContent: "center",
+  },
+  bar2: {
+    flex: 0.1,
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center", // Align items vertically in the middle
+    width: "100%",
+    marginTop: Constants.statusBarHeight,
+  },
+  Profile2: {
+    flexDirection: "row",
+    alignItems: "center", // Align items vertically in the middle
+  },
+  header: {
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center", // Align items vertically in the middle
   },
 });
 

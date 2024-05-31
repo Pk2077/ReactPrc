@@ -1,24 +1,24 @@
 import React from "react";
-import Screen from "./Screen";
-import { Image, Text, View } from "react-native";
-import { EvilIcons } from "@expo/vector-icons";
+import { Image, Text, View, SafeAreaView } from "react-native";
 import styles from "./styles";
+import ListItem from "./ListItem";
 function AppSatusBar() {
   return (
-    <Screen style={styles.bar2}>
+    <SafeAreaView style={styles.bar2}>
       <View style={styles.Profile2}>
-        <EvilIcons name="user" size={70} color="orange" />
+        <ListItem image={require("../assets/114382362.jpg")} />
       </View>
-      <View>
+      <View style={styles.header}>
         <Text style={styles.text2}>
           Focus ERP{" "}
           <Image
-            source={require("../assets/login-logo.png")}
+            source={require("../assets/logon.jpg")}
             resizeMode="contain"
+            style={{ height: 30, width: 50 }}
           />
         </Text>
       </View>
-    </Screen>
+    </SafeAreaView>
   );
 }
 

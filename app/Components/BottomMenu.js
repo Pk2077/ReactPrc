@@ -4,10 +4,10 @@ import { Entypo, MaterialIcons, FontAwesome } from "@expo/vector-icons";
 import { Colors } from "../colors";
 import styles from "./styles";
 
-function BottomMenu({ home, gotoTXN, gotoReport, gotoSettings, logout }) {
+function BottomMenu({ gotoHome, gotoTXN, gotoReport, gotoSettings, logout }) {
   return (
     <View style={styles.bottomMenu}>
-      <TouchableHighlight underlayColor="#DDDDDD" onPress={home}>
+      <TouchableHighlight underlayColor="#DDDDDD" onPress={gotoHome}>
         <View style={styles.bottomMenuItem}>
           <Entypo name="home" size={34} color={Colors.lightBlack} />
           <Text>Home</Text>
